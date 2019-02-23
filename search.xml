@@ -12,6 +12,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[hexo-pdf加载问题]]></title>
+    <url>%2F2018%2F12%2F02%2Fhexo-pdf%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[hexo-pdf加载问题pdf加载显示不全 分析后发现是css外链的原因（二分法真是个好东西！） 上图中的第一个全局css设定了embed的height为auto。 上图中全局css设置中height为auto后，会屏蔽下图中embed标签内的height和width设置，使其失效。 hexo-pdf中默认embed-height为100%时非常窄（如下图），从而出现下图这种pdf显示bug。 解决方法：更正全局CSS内的embed设置即可。 完~]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[PDF加载测试]]></title>
     <url>%2F2018%2F08%2F24%2FPDF%20%E5%8A%A0%E8%BD%BD%E6%B5%8B%E8%AF%95%2F</url>
     <content type="text"><![CDATA[Bash新手指南33PDF加载测试 Normal PDF]]></content>

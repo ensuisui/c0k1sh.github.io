@@ -144,6 +144,37 @@ s.parentNode.insertBefore(hm, s);
         <div class="box">
             <article class="media">
                 
+                <a href="/2018/12/02/hexo-pdf加载问题/">
+                    
+                    <div class="media-left">
+                        <figure class="image is-128x128">
+                            <img src="https://upload-images.jianshu.io/upload_images/12493634-e6152c033943659f.png?imageMogr2/auto-orient/" style="height: 100%; width: 100%">
+                        </figure>
+                    </div>
+                    
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>hexo-pdf加载问题</strong> <small class="post-date">at: 2018-12-02</small>
+                                <br>
+                                hexo-pdf加载问题pdf加载显示不全
+分析后发现是css外链的原因（二分法真是个好东西！）
+上图中的第一个全局css设定了embed的height为auto。
+
+上图中全局css设置中height为auto后，会屏蔽下图中embed标签内的height和width设置，使其失效。
+
+hexo-pdf中默认embed-height为100%时非常窄（..
+                            </p>
+                            <button class="button is-info">Read</button>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    
+        <div class="box">
+            <article class="media">
+                
                 <a href="/2018/06/02/安装GitHub Pages过程/">
                     
                     <div class="media-left">
@@ -193,7 +224,7 @@ mkdir bl..
   <div class="container has-padding">
     <div>
       <div>
-        Copyright ©  <a href="https://github.com/c0k1sh/c0k1sh.github.io" target="_blank">c0k1sh</a> 2018
+        Copyright ©  <a href="https://github.com/c0k1sh/c0k1sh.github.io" target="_blank">c0k1sh</a> 2019
         <br>
         Powered by <a href="https://hexo.io/zh-cn/" target="_blank">Hexo</a>  <a href="https://github.com/Haojen/hexo-theme-Claudia" target="_blank"> theme</a>
 
