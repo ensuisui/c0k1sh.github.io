@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/bulma.main.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  
+  <title>安装GitHub Pages过程 | ckliu&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1.安装node.js和npm1.1检查是否安装/版本号node -v     npm -v   git -version 以上会显示出相应的版本，">
+<meta name="keywords" content="Hexo,GitHub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装GitHub Pages过程">
+<meta property="og:url" content="https://c0k1sh.github.io/2018/06/02/安装GitHub Pages过程/index.html">
+<meta property="og:site_name" content="ckliu&#39;s blog">
+<meta property="og:description" content="1.安装node.js和npm1.1检查是否安装/版本号node -v     npm -v   git -version 以上会显示出相应的版本，">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3494919-09310d95471c6d7c.jpg?imageMogr2/auto-orient/">
+<meta property="og:updated_time" content="2018-10-03T04:15:17.183Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安装GitHub Pages过程">
+<meta name="twitter:description" content="1.安装node.js和npm1.1检查是否安装/版本号node -v     npm -v   git -version 以上会显示出相应的版本，">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3494919-09310d95471c6d7c.jpg?imageMogr2/auto-orient/">
+  
+    <link rel="alternate" href="/atom.xml" title="ckliu&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/layout.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130444024-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130444024-1');
+  </script>
+<!-- End baidu_tongji -->
+
+
+  
+<!-- baidu_tongji -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?de49980294ebeb50e99b620c5824cbca";
+  var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End baidu_tongji -->
+
+</head>
+
+<body>
+  <header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">c0k1sh</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/tags">
+                tags
+            </a>
+            
+            <a class="nav-item" href="/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/tags">
+                tags
+            </a>
+            
+            <a class="nav-item flex-1" href="/about">
+                About
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <!--博文页面-->
+
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
+        background-size: cover;
+        background-color: lightsteelblue;
+    }
+
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
+    }
+
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .flow-chart {
+        text-align: center;
+    }
+
+    img[alt="post-cover"] {
+        display: none;
+    }
+</style>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>安装GitHub Pages过程</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="http://wx4.sinaimg.cn/large/e4152a52ly8fopiue26znj20ro0roq4p.jpg">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> c0k1sh</span>
+                <span class="post-date sub-title">at: 2018-06-02</span>
+            </div>
+            
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/tags/Hexo/">Hexo</a>
+                    
+                         <a class="tag is-post-tag" href="/tags/GitHub/">GitHub</a>
+                    
+                </div>
+            
+        </div>
+        <div class="content" style="overflow: auto">
+            <p><img src="https://upload-images.jianshu.io/upload_images/3494919-09310d95471c6d7c.jpg?imageMogr2/auto-orient/" alt="post-cover"></p>
+<h1 id="1-安装node-js和npm"><a href="#1-安装node-js和npm" class="headerlink" title="1.安装node.js和npm"></a>1.安装node.js和npm</h1><h2 id="1-1检查是否安装-版本号"><a href="#1-1检查是否安装-版本号" class="headerlink" title="1.1检查是否安装/版本号"></a>1.1检查是否安装/版本号</h2><p><code>node -v    
+npm -v  
+git -version</code></p>
+<p>以上会显示出相应的版本，<a id="more"></a>若无则代表未安装。</p>
+<h2 id="1-2安装node-js和npm"><a href="#1-2安装node-js和npm" class="headerlink" title="1.2安装node.js和npm"></a>1.2安装node.js和npm</h2><pre><code>brew install node
+</code></pre><p>以上会自动安装。</p>
+<h1 id="2-hexo安装"><a href="#2-hexo安装" class="headerlink" title="2.hexo安装"></a>2.hexo安装</h1><pre><code>sudo npm install -g hexo
+</code></pre><h2 id="2-2创建文件夹"><a href="#2-2创建文件夹" class="headerlink" title="2.2创建文件夹"></a>2.2创建文件夹</h2><blockquote>
+<p>mkdir blog<br>cd blog<br>hexo init</p>
+</blockquote>
+<p>此时Macintosh-user(用户)-ckliu（username）目录下将会出现blog文件夹。</p>
+<h2 id="2-3生成一套静态网页"><a href="#2-3生成一套静态网页" class="headerlink" title="2.3生成一套静态网页"></a>2.3生成一套静态网页</h2><blockquote>
+<p>hexo g /<strong> g=generate 生成一套静态网页  //<br>hexo s // s=server 在服务器上运行</strong>/</p>
+</blockquote>
+<p>此时在浏览器上运行<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>就可以看到默认配置的hexo网站啦！</p>
+<h2 id="2-4撰写博客"><a href="#2-4撰写博客" class="headerlink" title="2.4撰写博客"></a>2.4撰写博客</h2><p>终端输入以下</p>
+<blockquote>
+<p>cd blog/<strong> 每次重新进入终端必须重新进入blog目录，否则会弹出 conmand命令介绍 </strong>/<br>hexo new poat“我的博客名字” //后期也可以对bolg-source-—post中的md格式博客进行编辑更改</p>
+</blockquote>
+<h1 id="3-配置config-yml说明"><a href="#3-配置config-yml说明" class="headerlink" title="3.配置config.yml说明"></a>3.配置config.yml说明</h1><h2 id="修改config-yml"><a href="#修改config-yml" class="headerlink" title="修改config.yml"></a>修改config.yml</h2><blockquote>
+<p>depoly：<br>type : git<br>repo：<a href="https://github.com/c0k1sh/c0k1sh.github.io.git" target="_blank" rel="noopener">https://github.com/c0k1sh/c0k1sh.github.io.git</a><br>branch：master  </p>
+</blockquote>
+<p>对以上进行修改，使其配置对应web端，届时可以更新自动判断上传。<br>另外修改这些属性时，请注意格式，属性和值要空一个格，比如theme: landscape。</p>
+<h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><blockquote>
+<p>hexo deploy  </p>
+</blockquote>
+<p>问题 1<br>$ hexo d<br>ERROR Deployer not found: git<br>解决方法<br>npm install –save hexo-deployer-git<br>再次运行hexo d即可</p>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><blockquote>
+<p>hexo clean<br>hexo generate<br>hexo deploy  </p>
+</blockquote>
+<p>完。</p>
+
+        </div>
+        <div class="post-reply">
+            
+            
+            <div id="disqus_thread" style="width: 80%; margin: 0 auto;"></div>
+                <script>
+
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                     var disqus_config = function () {
+                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                     };
+                     */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'http://disqus.com/by/disqus_QpoyCFeZR3';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+        </div>
+    </div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        Copyright ©  <a href="https://github.com/c0k1sh/c0k1sh.github.io" target="_blank">c0k1sh</a> 2018
+        <br>
+        Powered by <a href="https://hexo.io/zh-cn/" target="_blank">Hexo</a>  <a href="https://github.com/Haojen/hexo-theme-Claudia" target="_blank"> theme</a>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/search_core.js"></script>
+<script src="/js/script.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

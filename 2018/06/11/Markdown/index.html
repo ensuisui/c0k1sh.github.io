@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/bulma.main.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  
+  <title>Markdown | ckliu&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Markdown是一种可以通过简单标记语法编辑，使普通文本呈现特定排版格式的标记语言。     宗旨：「易读易写」    功能：排版、图片、表格、脚注、内嵌HTML等    特点： 易读易写、兼容HTML、可代码式完全键盘输入">
+<meta name="keywords" content="Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown">
+<meta property="og:url" content="https://c0k1sh.github.io/2018/06/11/Markdown/index.html">
+<meta property="og:site_name" content="ckliu&#39;s blog">
+<meta property="og:description" content="Markdown是一种可以通过简单标记语法编辑，使普通文本呈现特定排版格式的标记语言。     宗旨：「易读易写」    功能：排版、图片、表格、脚注、内嵌HTML等    特点： 易读易写、兼容HTML、可代码式完全键盘输入">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3494919-9f4fcfcec32264ff.jpg?imageMogr2/auto-orient/">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3494919-de58a70e16a13fee.png?imageMogr2/auto-orient/">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3494919-672e8a209ff2c533.png?imageMogr2/auto-orient/">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/3494919-8ca12a78fcf04c09.png?imageMogr2/auto-orient/">
+<meta property="og:updated_time" content="2018-08-13T12:07:45.024Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown">
+<meta name="twitter:description" content="Markdown是一种可以通过简单标记语法编辑，使普通文本呈现特定排版格式的标记语言。     宗旨：「易读易写」    功能：排版、图片、表格、脚注、内嵌HTML等    特点： 易读易写、兼容HTML、可代码式完全键盘输入">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/3494919-9f4fcfcec32264ff.jpg?imageMogr2/auto-orient/">
+  
+    <link rel="alternate" href="/atom.xml" title="ckliu&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/layout.css">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130444024-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130444024-1');
+  </script>
+<!-- End baidu_tongji -->
+
+
+  
+<!-- baidu_tongji -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?de49980294ebeb50e99b620c5824cbca";
+  var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End baidu_tongji -->
+
+</head>
+
+<body>
+  <header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">c0k1sh</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/tags">
+                tags
+            </a>
+            
+            <a class="nav-item" href="/about">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/tags">
+                tags
+            </a>
+            
+            <a class="nav-item flex-1" href="/about">
+                About
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <!--博文页面-->
+
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
+        background-size: cover;
+        background-color: lightsteelblue;
+    }
+
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
+    }
+
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .flow-chart {
+        text-align: center;
+    }
+
+    img[alt="post-cover"] {
+        display: none;
+    }
+</style>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>Markdown</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="http://wx4.sinaimg.cn/large/e4152a52ly8fopiue26znj20ro0roq4p.jpg">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> c0k1sh</span>
+                <span class="post-date sub-title">at: 2018-06-11</span>
+            </div>
+            
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/tags/Markdown/">Markdown</a>
+                    
+                </div>
+            
+        </div>
+        <div class="content" style="overflow: auto">
+            <p><img src="https://upload-images.jianshu.io/upload_images/3494919-9f4fcfcec32264ff.jpg?imageMogr2/auto-orient/" alt="post-cover">   </p>
+<p>Markdown是一种可以通过简单标记语法编辑，使普通文本呈现特定排版格式的标记语言。   </p>
+<ul>
+<li>宗旨：「易读易写」   </li>
+<li>功能：排版、图片、表格、脚注、内嵌HTML等   </li>
+<li>特点： 易读易写、兼容HTML、可代码式完全键盘输入   </li>
+</ul>
+<a id="more"></a>
+<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h2 id="1-排版"><a href="#1-排版" class="headerlink" title="1. 排版"></a>1. 排版</h2><h3 id="1-1-字体"><a href="#1-1-字体" class="headerlink" title="1.1 字体"></a>1.1 字体</h3><table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th style="text-align:center">输出</th>
+<th style="text-align:center">快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td># Heading</td>
+<td style="text-align:center">H1</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>## Heading</td>
+<td style="text-align:center">H2</td>
+<td style="text-align:center">Ctrl/⌘ + H</td>
+</tr>
+<tr>
+<td>**Bold**</td>
+<td style="text-align:center"><strong>Bold</strong></td>
+<td style="text-align:center">Ctrl/⌘ + B</td>
+</tr>
+<tr>
+<td>*<strong>Bold+Emphasize*</strong></td>
+<td style="text-align:center"><strong><em>Bold</em></strong></td>
+<td style="text-align:center">Ctrl/⌘ + B</td>
+</tr>
+<tr>
+<td>*Emphasize*</td>
+<td style="text-align:center"><em>Emphasize</em></td>
+<td style="text-align:center">Ctrl/⌘ + I</td>
+</tr>
+<tr>
+<td>~~Strike-through ~~</td>
+<td style="text-align:center"><del>text</del></td>
+<td style="text-align:center">Ctrl + Alt + U</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-2-格式"><a href="#1-2-格式" class="headerlink" title="1.2 格式"></a>1.2 格式</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Markdown</th>
+<th style="text-align:center">输出</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Markdown</th>
+<th style="text-align:center">输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">Enter换行</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">`   `</td>
+<td style="text-align:center">内嵌代码</td>
+</tr>
+<tr>
+<td style="text-align:center">三个*</td>
+<td style="text-align:center">分割线</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Tab</td>
+<td style="text-align:center">代码块</td>
+</tr>
+<tr>
+<td style="text-align:center">三个空格</td>
+<td style="text-align:center">引用</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>`</code></td>
+<td style="text-align:center">代码</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<!--我是注释，无法预览-->
+<h3 id="1-3-首行缩进"><a href="#1-3-首行缩进" class="headerlink" title="1.3 首行缩进"></a>1.3 首行缩进</h3><ul>
+<li>&amp;+nbsp; (无+号)   </li>
+<li>&amp;+#160;  (无+号)   </li>
+<li>汉字全角输入两个空格    </li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3494919-de58a70e16a13fee.png?imageMogr2/auto-orient/" alt=""> </p>
+<hr>
+<h3 id="1-4-表格"><a href="#1-4-表格" class="headerlink" title="1.4 表格"></a>1.4 表格</h3><p>　　知乎的图用不了，WTF！还差点把我仓库搞炸。。。自己传的图。<br>上文1.1字体 是具体的显示效果。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/3494919-672e8a209ff2c533.png?imageMogr2/auto-orient/" alt=""></p>
+<h2 id="1-5-链接"><a href="#1-5-链接" class="headerlink" title="1.5 链接"></a>1.5 链接</h2><ul>
+<li>跳转链接：[百度](<a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a>) </li>
+<li>插入图片：![图片]（地址）   </li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/3494919-8ca12a78fcf04c09.png?imageMogr2/auto-orient/" alt=""></p>
+<ul>
+<li>[我的主页](w<a href="http://www.best5.club" target="_blank" rel="noopener">www.best5.club</a>) –<br><a href="wwww.best5.club">我的主页</a>    </li>
+<li>插入图片的[]框中为图片属性，相当于img的 alt 属性。<br>比如：![post-cover]（地址）  //部分主题中post-cover 为背景图片</li>
+</ul>
+<h2 id="更多参考"><a href="#更多参考" class="headerlink" title="更多参考"></a>更多参考</h2><p><a href="http://wowubuntu.com/markdown/" target="_blank" rel="noopener">Markdown:Basics</a></p>
+
+        </div>
+        <div class="post-reply">
+            
+            
+            <div id="disqus_thread" style="width: 80%; margin: 0 auto;"></div>
+                <script>
+
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                    /*
+                     var disqus_config = function () {
+                     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                     };
+                     */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'http://disqus.com/by/disqus_QpoyCFeZR3';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+        </div>
+    </div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        Copyright ©  <a href="https://github.com/c0k1sh/c0k1sh.github.io" target="_blank">c0k1sh</a> 2018
+        <br>
+        Powered by <a href="https://hexo.io/zh-cn/" target="_blank">Hexo</a>  <a href="https://github.com/Haojen/hexo-theme-Claudia" target="_blank"> theme</a>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/search_core.js"></script>
+<script src="/js/script.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
