@@ -101,6 +101,11 @@
 }
 /*position end*/
 
+/*主页下方第四个起显示右边贴着边呢，上右下左*/
+.content-right {
+    padding: 0 15px 0 0;
+}
+
 /*tools start*/
 .content-box {
     background-color: #fff;
