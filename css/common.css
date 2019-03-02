@@ -101,9 +101,9 @@
 }
 /*position end*/
 
-/*主页下方第四个起显示右边贴着边呢，上右下左*/
+/*第四个起的右边距*/
 .content-right {
-    padding: 0 15px 0 0;
+    padding-right: 20px
 }
 
 /*tools start*/
