@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://c0k1sh.github.io/about/index.html</loc>
+    
+    <lastmod>2019-03-02T13:08:47.031Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://c0k1sh.github.io/2018/12/01/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2019-03-02T10:06:18.528Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>https://c0k1sh.github.io/2018/12/20/hexo-pdf%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2019-02-24T09:49:45.937Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://c0k1sh.github.io/about/index.html</loc>
-    
-    <lastmod>2019-02-24T09:48:32.840Z</lastmod>
     
   </url>
   
