@@ -159,11 +159,12 @@ s.parentNode.insertBefore(hm, s);
                                 <br>
                                 hexo-pdf加载问题pdf加载显示不全
 分析后发现是css外链的原因（二分法真是个好东西！）
-上图中的第一个全局css设定了embed的height为auto。
 
-上图中全局css设置中height为auto后，会屏蔽下图中embed标签内的height和width设置，使其失效。
+上图中的第一个全局css设定了embed的height为auto，会屏蔽下图中embed标签内的height和width设置，使其失效。
 
-hexo-pdf中默认embed-height为100%时非常窄（..
+hexo-pdf中默认embed-height为100%时非常窄（如下图），从而出现下图这种pdf显示bug。
+
+解..
                             </p>
                             <button class="button is-info">Read</button>
                         </div>

@@ -8,21 +8,21 @@
   
   <title>hexo-pdf加载问题 | ckliu&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo-pdf加载问题pdf加载显示不全 分析后发现是css外链的原因（二分法真是个好东西！） 上图中的第一个全局css设定了embed的height为auto。  上图中全局css设置中height为auto后，会屏蔽下图中embed标签内的height和width设置，使其失效。  hexo-pdf中默认embed-height为100%时非常窄（如下图），从而出现下图这种pdf显示bug。">
+  <meta name="description" content="hexo-pdf加载问题pdf加载显示不全 分析后发现是css外链的原因（二分法真是个好东西！）  上图中的第一个全局css设定了embed的height为auto，会屏蔽">
 <meta name="keywords" content="Hexo,GitHub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo-pdf加载问题">
 <meta property="og:url" content="https://c0k1sh.github.io/2018/12/20/hexo-pdf加载问题/index.html">
 <meta property="og:site_name" content="ckliu&#39;s blog">
-<meta property="og:description" content="hexo-pdf加载问题pdf加载显示不全 分析后发现是css外链的原因（二分法真是个好东西！） 上图中的第一个全局css设定了embed的height为auto。  上图中全局css设置中height为auto后，会屏蔽下图中embed标签内的height和width设置，使其失效。  hexo-pdf中默认embed-height为100%时非常窄（如下图），从而出现下图这种pdf显示bug。">
+<meta property="og:description" content="hexo-pdf加载问题pdf加载显示不全 分析后发现是css外链的原因（二分法真是个好东西！）  上图中的第一个全局css设定了embed的height为auto，会屏蔽">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12493634-e6152c033943659f.png?imageMogr2/auto-orient/">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12493634-70b2d5b33939cbc2.png?imageMogr2/auto-orient/">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12493634-5fe2f1f8a3afa708.png?imageMogr2/auto-orient/">
-<meta property="og:updated_time" content="2019-02-24T09:49:45.937Z">
+<meta property="og:updated_time" content="2019-03-07T14:24:24.168Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-pdf加载问题">
-<meta name="twitter:description" content="hexo-pdf加载问题pdf加载显示不全 分析后发现是css外链的原因（二分法真是个好东西！） 上图中的第一个全局css设定了embed的height为auto。  上图中全局css设置中height为auto后，会屏蔽下图中embed标签内的height和width设置，使其失效。  hexo-pdf中默认embed-height为100%时非常窄（如下图），从而出现下图这种pdf显示bug。">
+<meta name="twitter:description" content="hexo-pdf加载问题pdf加载显示不全 分析后发现是css外链的原因（二分法真是个好东西！）  上图中的第一个全局css设定了embed的height为auto，会屏蔽">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/12493634-e6152c033943659f.png?imageMogr2/auto-orient/">
   
     <link rel="alternate" href="/atom.xml" title="ckliu&#39;s blog" type="application/atom+xml">
@@ -136,13 +136,14 @@ s.parentNode.insertBefore(hm, s);
     }
 
     .post-box {
-        padding: 60px 2% 0px 2%;
+        padding: 60px 2.5% 0px 2.5%;
         min-height: 80vh;
         margin-top: -200px;
-        margin-bottom: 20px;      
+        margin-bottom: 20px;
         border-radius: 4px;
         background-color: rgba(255,255,255,.8);
-      /*  font-family: Noto Sans SC, sans-serif;*/
+        /*font-family: Noto Sans SC, sans-serif;*/
+        font-size: 125%;
         box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
     }
 
@@ -188,9 +189,8 @@ s.parentNode.insertBefore(hm, s);
         <div class="content" style="overflow: auto">
             <h2 id="hexo-pdf加载问题"><a href="#hexo-pdf加载问题" class="headerlink" title="hexo-pdf加载问题"></a>hexo-pdf加载问题</h2><p>pdf加载显示不全</p>
 <p>分析后发现是css外链的原因（二分法真是个好东西！）</p>
-<p>上图中的第一个全局css设定了embed的height为auto。</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/12493634-e6152c033943659f.png?imageMogr2/auto-orient/" alt="img"></p>
-<p>上图中全局css设置中height为auto后，会屏蔽下图中embed标签内的height和width设置，使其失效。</p>
+<p>上图中的第一个全局css设定了embed的height为auto，会屏蔽<a id="more"></a>下图中embed标签内的height和width设置，使其失效。</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/12493634-70b2d5b33939cbc2.png?imageMogr2/auto-orient/" alt="img"></p>
 <p>hexo-pdf中默认embed-height为100%时非常窄（如下图），从而出现下图这种pdf显示bug。</p>
 <p><img src="https://upload-images.jianshu.io/upload_images/12493634-5fe2f1f8a3afa708.png?imageMogr2/auto-orient/" alt="img"></p>
