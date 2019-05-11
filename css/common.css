@@ -189,3 +189,55 @@
 .blur {
     filter: blur(10px);
 }
+
+
+
+/*文章目录*/
+
+/*
+#article-toc-inner:after,#article-toc-inner:before,.inner:after,.inner:before{
+  content: "";
+  display: table
+}
+
+##article-toc-inner:after,inner:after{
+  clear: both
+}
+@media screen{
+  #article-toc-inner,.inner{
+    padding: 0 20px
+  }
+}
+#article-toc {
+   display: none;
+   float: right;
+   width: 25%;
+   margin-top: 200px;
+   margin-right: -200px:
+
+   opacity: .8
+}
+
+@media screen and (min-width:769px){
+  #article-toc{
+    display: block
+  }
+}
+#article-toc.fixed{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  padding-top: 55px;
+}
+.fixed #article-toc-inner{
+  position: fixed;
+  width: 20px;
+  top: 0;
+  bottom: 0;
+  padding-top: 55px;
+
+}
+#article-toc-innner ol{
+  margin-left: 50px;
+}
